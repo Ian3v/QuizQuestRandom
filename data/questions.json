@@ -1,0 +1,259 @@
+{
+    "questions": [
+      {
+        "id": 0,
+        "question": "¿Qué es una clave primaria en una tabla de base de datos?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un campo que puede contener valores duplicados"
+          },
+          {
+            "id": "b",
+            "text": "Un campo que identifica de manera única cada fila en la tabla"
+          },
+          {
+            "id": "c",
+            "text": "Un campo que no puede contener valores nulos"
+          },
+          {
+            "id": "d",
+            "text": "Un campo que define la estructura de la tabla"
+          }
+        ],
+        "answer": "b"
+
+      },
+      {
+        "id": 1,
+        "question": "Respecto de las claves candidatas en el modelo relacional, señalar la afirmación errónea:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Toda relación tiene al menos una clave candidata."
+          },
+          {
+            "id": "b",
+            "text": "Una clave candidata es una clave primaria que también cumple la propiedad de minimalidad."
+          },
+          {
+            "id": "c",
+            "text": "Toda clave primaria es también clave candidata."
+          },
+          {
+            "id": "d",
+            "text": "Toda clave alternativa es también clave candidata."
+          }
+        ],
+        "answer" : "b"
+      },
+      {
+        "id": 2,
+        "question": "Qué es una transacción en el contexto de bases de datos?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una consulta SQL"
+          },
+          {
+            "id": "b",
+            "text": "Una operación de mantenimiento de la base de datos"
+          },
+          {
+            "id": "c",
+            "text": "Un conjunto de operaciones que se ejecutan como una unidad indivisible"
+          },
+          {
+            "id": "d",
+            "text": "Un procedimiento almacenado"
+          }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 3,
+        "question": "¿Qué es la normalización de bases de datos y cuál es su objetivo principal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Proceso para descomponer grandes tablas en tablas más pequeñas y optimizar el  rendimiento"
+          },
+          {
+            "id": "b",
+            "text": "Proceso para asegurar que los datos estén correctos y sin errores."
+          },
+          {
+            "id": "c",
+            "text": "Proceso para minimizar la redundancia y evitar anomalías de actualización."
+          },
+          {
+            "id": "d",
+            "text": "Proceso para eliminar datos duplicados y mejorar la eficiencia de almacenamiento"
+          }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 4,
+        "question": "¿Qué es la normalización de BCNF (Boyce-Codd Normal Form)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Forma normal que elimina la dependencia transitiva."
+          },
+          {
+            "id": "b",
+            "text": "Forma normal que elimina la dependencia multivaluada"
+          },
+          {
+            "id": "c",
+            "text": "Forma normal que asegura que cada determinante sea una superclave."
+          },
+          {
+            "id": "d",
+            "text": "Forma normal que asegura que no haya dependencias funcionales parciales."
+          }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 5,
+        "question": "¿Qué es un índice en una base de datos y cuál es su propósito principal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Estructura que facilita la organización física de los datos en el disco."
+          },
+          {
+            "id": "b",
+            "text": "Estructura que asegura la coherencia y consistencia de los datos"
+          },
+          {
+            "id": "c",
+            "text": "Estructura que acelera la búsqueda y recuperación de datos."
+          },
+          {
+            "id": "d",
+            "text": "Estructura que asegura la privacidad y seguridad de los datos."
+          }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 6,
+        "question": "¿Qué son las vistas en una base de datos y para qué se utilizan?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Resultado de una consulta almacenado en una tabla."
+          },
+          {
+            "id": "b",
+            "text": "Definición de una tabla virtual basada en una consulta SQL"
+          },
+          {
+            "id": "c",
+            "text": "Tipo de tabla que almacena los resultados de una operación."
+          },
+          {
+            "id": "d",
+            "text": "Tipo de tabla que almacena datos temporales durante una transacción."
+          }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 7,
+        "question": "Dadas las siguientes relaciones: Cliente(dni, paterno, materno, nombres, direccion, telefono) Cuenta(numero_cta, fecha_apertura, saldo, dni_cliente) ¿Qué tipo de restricción debe agregar y en qué tabla para asegurar que siempre que se introduzca una cuenta nueva el cliente al que pertenece dicha cuenta deba existir previamente y siempre que se borre un Cliente se borren todos sus Cuentas?",
+        "options": [
+          {
+            "id": "a",
+            "text": "En la relación Cuenta definir el atributo dni_cliente como NOT NULL, como clave ajena el atributo dni_cliente y como opción de borrado especificar CASCADE."
+          },
+          {
+            "id": "b",
+            "text": "En la relación Cuenta definir como clave ajena sobre el atributo dni_cliente que especifique como opción de borrado NO ACTION"
+          },
+          {
+            "id": "c",
+            "text": "En la relación Cliente definir como clave ajena el atributo dni y como opción de borrado especificar CASCADE."
+          },
+          {
+            "id": "d",
+            "text": "En la relación Cuentas definir una restricción CHECK indicando como modo de borrado CASCADE"
+          }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 8,
+        "question": "¿Qué es la prueba de carga en el contexto de pruebas de software?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Prueba para verificar la estabilidad del sistema ante una carga máxima."
+          },
+          {
+            "id": "b",
+            "text": "Prueba para encontrar defectos en el software utilizando datos de carga"
+          },
+          {
+            "id": "c",
+            "text": "Prueba para verificar la capacidad del software para manejar múltiples usuarios.."
+          },
+          {
+            "id": "d",
+            "text": "Prueba para verificar la capacidad de recuperación del sistema después de una carga máxima."
+          }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 9,
+        "question": "¿Cuál es el propósito principal de la prueba de regresión en el ciclo de vida del desarrollo de software?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Verificar la corrección de los requisitos del software"
+          },
+          {
+            "id": "b",
+            "text": "Asegurar que los nuevos cambios no introduzcan errores en el software existente."
+          },
+          {
+            "id": "c",
+            "text": "Evaluar la capacidad de rendimiento del software bajo condiciones normales de uso."
+          },
+          {
+            "id": "d",
+            "text": "Optimizar el rendimiento del software utilizando técnicas de carga"
+          }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 10,
+        "question": "¿Qué es la automatización de pruebas en el contexto de evaluación de software?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Proceso para realizar pruebas manuales sin intervención humana."
+          },
+          {
+            "id": "b",
+            "text": "Proceso para utilizar herramientas y scripts para ejecutar pruebas automáticamente"
+          },
+          {
+            "id": "c",
+            "text": "Proceso para simular la interacción del usuario final con el software"
+          },
+          {
+            "id": "d",
+            "text": "Proceso para documentar los resultados de las pruebas de manera automatizada"
+          }
+        ],
+        "answer": "c"
+      }
+    ]
+  }
+  
