@@ -1,0 +1,28 @@
+
+.correcta{
+    background-color: green;
+}
+.cartilla li{
+    list-style: none;
+}
+.incorrecta{
+    background-color: red;
+}
+
+.cartilla ul{
+    text-align: left;
+}
+
+.textPregunta{
+
+}
+
+.textOption{
+    border: 3px solid rgb(88, 88, 88);
+    border-radius: 15px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.textOption:hover{
+    background-color: rgb(49, 49, 49);
+}
